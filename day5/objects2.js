@@ -40,5 +40,24 @@ const obj2 = {
 }
 
 const footballers = {...obj1, ...obj2} //... bhneko spread ho hae
-console.log(footballers);
+// console.log(footballers);
+
+
+
+//object destructuring
+const team ={
+    teamName : "The vikings",
+    teamCode : "1001",
+    teamLeader : "Ragnar"
+}
+
+console.log(team.teamLeader);
+
+//yo chahi destructuring gareko 
+const {teamLeader} = team;
+console.log(teamLeader); //output = Ragnar
+
+
+const {teamLeader : lead} = team;
+console.log(lead); //output = Ragnar
 
