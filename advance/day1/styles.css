@@ -1,0 +1,14 @@
+#bulb{
+    height:300px;
+    width:300px;
+    border: 1px solid black;
+    margin: 100px;
+    border-radius: 50%;
+}
+
+#bulb-btn{
+    height:50px;
+    width: 100px;
+    margin: 10px 0px 0px 200px;
+
+}
