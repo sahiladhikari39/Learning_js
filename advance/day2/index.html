@@ -3,10 +3,39 @@
         <title>DOM day2</title>
         <link rel="stylesheet", src="styles.css">
     </head>
-    <body>
+    <body style="background-color: #252525">
+        <!-- <h1>Hello Hello</h1>
         <h1>Hello Hello</h1>
-        <h1>Hello Hello</h1>
-        <h1>Hello Hello</h1>
-        <script src="./script.js"></script>
+        <h1>Hello Hello</h1> -->
+        <script>
+            const div = document.createElement("div");
+            console.log(div)
+            div.className = "addDiv";
+            div.id = "myId";
+            div.setAttribute("title", "mytitle");
+            div.style.padding = "12px";
+            div.style.backgroundColor = 'green';
+
+            //div.innerText = "Hello this is Sahil";
+
+            const addText = document.createTextNode("Hello this is sahil");
+            div.appendChild(addText);
+
+            document.body.appendChild(div);
+
+            //--------------------------another element too------------------------------
+            const p1 = document.createElement("p");
+            p1.style.backgroundColor = 'green';
+            
+            //adding the p1 to document
+            const addP1 = document.createTextNode("Hello World");
+            div.appendChild(addP1);
+
+            document.body.appendChild(addP1);
+            
+            
+
+
+        </script>
     </body>
 </html>
