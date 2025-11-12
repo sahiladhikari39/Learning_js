@@ -3,11 +3,15 @@
         <title>DOM day2</title>
         <link rel="stylesheet", src="styles.css">
     </head>
-    <body style="background-color: #252525">
+    <body style="background-color: #252525; color: white;">
         <!-- <h1>Hello Hello</h1>
         <h1>Hello Hello</h1>
         <h1>Hello Hello</h1> -->
-        <script>
+        <li id="language">
+            <ul>Python</ul>
+        </li>
+    </body>
+    <script>
             const div = document.createElement("div");
             console.log(div)
             div.className = "addDiv";
@@ -35,7 +39,13 @@
             
             
 
+            function addLanguage(langName){
+                const li = document.createElement("li");
+                li.appendChild(document.createTextNode(langName));
+                document.querySelector('#language').appendChild(li);
+            }
 
-        </script>
-    </body>
+            addLanguage("Javascript");
+
+    </script>
 </html>
